@@ -6,7 +6,7 @@ all: $(TARGET)
 $(TARGET): doom.o wad.o
 	$(CC) $(CFLAGS) -o $(TARGET) doom.o wad.o
 
-doom.o: doom.c wad.h
+doom.o: doom.c datatype.h wad.h
 	$(CC) $(CFLAGS) -c doom.c
 
 wad.o: wad.c wad.h
