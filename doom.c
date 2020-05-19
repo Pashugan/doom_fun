@@ -28,5 +28,11 @@ int main()
 
 	fclose(fp);
 
+	free(map->vertexes);
+	free(map->linedefs);
+	free(map);
+	free(dirs);
+	free(header);
+
 	return EXIT_SUCCESS;
 }
